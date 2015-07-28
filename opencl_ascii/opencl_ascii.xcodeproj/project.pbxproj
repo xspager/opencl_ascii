@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0A37A4C1B672F18004A348F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A37A3B1B672DE2004A348F /* main.c */; };
-		B0A37A4D1B672F1B004A348F /* mykernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = B0A37A3E1B672E19004A348F /* mykernel.cl */; };
+		B0A37A4F1B673291004A348F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A37A4E1B673291004A348F /* main.c */; };
+		B0A37A511B6732A5004A348F /* mykernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = B0A37A501B6732A5004A348F /* mykernel.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0A37A3B1B672DE2004A348F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
-		B0A37A3E1B672E19004A348F /* mykernel.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; name = mykernel.cl; path = ../mykernel.cl; sourceTree = "<group>"; };
 		B0A37A441B672EBE004A348F /* opencl_ascii */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opencl_ascii; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A37A4E1B673291004A348F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B0A37A501B6732A5004A348F /* mykernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mykernel.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 		B0A37A461B672EBE004A348F /* opencl_ascii */ = {
 			isa = PBXGroup;
 			children = (
-				B0A37A3B1B672DE2004A348F /* main.c */,
-				B0A37A3E1B672E19004A348F /* mykernel.cl */,
+				B0A37A501B6732A5004A348F /* mykernel.cl */,
+				B0A37A4E1B673291004A348F /* main.c */,
 			);
 			path = opencl_ascii;
 			sourceTree = "<group>";
@@ -120,8 +120,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A37A4C1B672F18004A348F /* main.c in Sources */,
-				B0A37A4D1B672F1B004A348F /* mykernel.cl in Sources */,
+				B0A37A511B6732A5004A348F /* mykernel.cl in Sources */,
+				B0A37A4F1B673291004A348F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +178,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OPENCL_OPTIMIZATION_LEVEL = 1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -214,6 +215,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OPENCL_OPTIMIZATION_LEVEL = 1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
